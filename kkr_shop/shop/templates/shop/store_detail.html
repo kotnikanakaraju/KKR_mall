@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{store.name}}</title>
+</head>
+<body>
+    <h1>{{store.name}}</h1>
+    <p>{{store.description}}</p>
+    <p>Location:{{store.location}}</p>
+
+    <h2>products</h2>
+    <ul>
+        {% for product in products%}
+        <li>{{product.name}}-${{product.price}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
